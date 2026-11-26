@@ -13,7 +13,7 @@ export const Sahne: React.FC<{sure: number; children: React.ReactNode; sonGecis?
   return (
     <AbsoluteFill
       style={{
-        transform: `scale(${girOlcek * cikOlcek})`,
+        transform: `scale(${girOlcek * cikOlcek * (1 + f * 0.0006)})`,
         filter: `blur(${girBlur + cikBlur}px)`,
         opacity: girOp * cikOp,
       }}
