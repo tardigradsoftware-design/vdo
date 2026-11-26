@@ -1,0 +1,247 @@
+[
+ {
+  "kelime": "Kimlik",
+  "baslangic": 0.19,
+  "bitis": 0.38
+ },
+ {
+  "kelime": "bilgilerin",
+  "baslangic": 0.38,
+  "bitis": 1
+ },
+ {
+  "kelime": "sızdıysa,",
+  "baslangic": 1,
+  "bitis": 1.73
+ },
+ {
+  "kelime": "haberin",
+  "baslangic": 1.73,
+  "bitis": 2.18
+ },
+ {
+  "kelime": "bile",
+  "baslangic": 2.18,
+  "bitis": 2.44
+ },
+ {
+  "kelime": "olmadan",
+  "baslangic": 2.44,
+  "bitis": 2.88
+ },
+ {
+  "kelime": "adına",
+  "baslangic": 2.88,
+  "bitis": 3.33
+ },
+ {
+  "kelime": "şirket",
+  "baslangic": 3.33,
+  "bitis": 3.7
+ },
+ {
+  "kelime": "açılıp,",
+  "baslangic": 3.7,
+  "bitis": 4.64
+ },
+ {
+  "kelime": "milyonlarca",
+  "baslangic": 4.64,
+  "bitis": 5.38
+ },
+ {
+  "kelime": "lira",
+  "baslangic": 5.38,
+  "bitis": 5.58
+ },
+ {
+  "kelime": "vergi",
+  "baslangic": 5.58,
+  "bitis": 6.04
+ },
+ {
+  "kelime": "ve",
+  "baslangic": 6.04,
+  "bitis": 6.32
+ },
+ {
+  "kelime": "icra",
+  "baslangic": 6.32,
+  "bitis": 6.46
+ },
+ {
+  "kelime": "borcuna",
+  "baslangic": 6.46,
+  "bitis": 6.83
+ },
+ {
+  "kelime": "sokulabilirsin.",
+  "baslangic": 6.83,
+  "bitis": 7.82
+ },
+ {
+  "kelime": "Çoğu",
+  "baslangic": 7.82,
+  "bitis": 8.39
+ },
+ {
+  "kelime": "kişi",
+  "baslangic": 8.39,
+  "bitis": 8.44
+ },
+ {
+  "kelime": "bunu",
+  "baslangic": 8.44,
+  "bitis": 8.6
+ },
+ {
+  "kelime": "kapısına",
+  "baslangic": 8.6,
+  "bitis": 9.22
+ },
+ {
+  "kelime": "haciz",
+  "baslangic": 9.22,
+  "bitis": 9.46
+ },
+ {
+  "kelime": "kağıdı",
+  "baslangic": 9.46,
+  "bitis": 9.9
+ },
+ {
+  "kelime": "gelince",
+  "baslangic": 9.9,
+  "bitis": 10.27
+ },
+ {
+  "kelime": "öğreniyor.",
+  "baslangic": 10.27,
+  "bitis": 11.08
+ },
+ {
+  "kelime": "Ama",
+  "baslangic": 11.08,
+  "bitis": 11.33
+ },
+ {
+  "kelime": "e-Devlet'te",
+  "baslangic": 11.33,
+  "bitis": 11.96
+ },
+ {
+  "kelime": "tek",
+  "baslangic": 11.96,
+  "bitis": 12.15
+ },
+ {
+  "kelime": "bir",
+  "baslangic": 12.15,
+  "bitis": 12.34
+ },
+ {
+  "kelime": "kilidi",
+  "baslangic": 12.34,
+  "bitis": 12.76
+ },
+ {
+  "kelime": "açtığında,",
+  "baslangic": 12.76,
+  "bitis": 13.68
+ },
+ {
+  "kelime": "senin",
+  "baslangic": 13.68,
+  "bitis": 14
+ },
+ {
+  "kelime": "onayın",
+  "baslangic": 14,
+  "bitis": 14.45
+ },
+ {
+  "kelime": "olmadan",
+  "baslangic": 14.45,
+  "bitis": 14.9
+ },
+ {
+  "kelime": "kimse",
+  "baslangic": 14.9,
+  "bitis": 15.22
+ },
+ {
+  "kelime": "adına",
+  "baslangic": 15.22,
+  "bitis": 15.62
+ },
+ {
+  "kelime": "şirket",
+  "baslangic": 15.62,
+  "bitis": 16.06
+ },
+ {
+  "kelime": "kuramıyor.",
+  "baslangic": 16.06,
+  "bitis": 17.06
+ },
+ {
+  "kelime": "Yorumlara",
+  "baslangic": 17.06,
+  "bitis": 17.7
+ },
+ {
+  "kelime": "KORUMA",
+  "baslangic": 17.7,
+  "bitis": 17.99
+ },
+ {
+  "kelime": "yaz,",
+  "baslangic": 17.99,
+  "bitis": 18.39
+ },
+ {
+  "kelime": "bu",
+  "baslangic": 18.39,
+  "bitis": 18.42
+ },
+ {
+  "kelime": "güvenlik",
+  "baslangic": 18.42,
+  "bitis": 18.96
+ },
+ {
+  "kelime": "kilidini",
+  "baslangic": 18.96,
+  "bitis": 19.53
+ },
+ {
+  "kelime": "nasıl",
+  "baslangic": 19.53,
+  "bitis": 19.91
+ },
+ {
+  "kelime": "açacağını",
+  "baslangic": 19.91,
+  "bitis": 20.72
+ },
+ {
+  "kelime": "adım",
+  "baslangic": 20.72,
+  "bitis": 21.02
+ },
+ {
+  "kelime": "adım",
+  "baslangic": 21.02,
+  "bitis": 21.32
+ },
+ {
+  "kelime": "hemen",
+  "baslangic": 21.32,
+  "bitis": 21.64
+ },
+ {
+  "kelime": "göndereyim.",
+  "baslangic": 21.64,
+  "bitis": 22.64
+ }
+]
