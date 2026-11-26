@@ -20,4 +20,4 @@ Kullanıcıya her zaman kısa ve öz yaz.
 `HF_HUB_DISABLE_XET=1 .venv-tts/bin/python scripts/tts_chatterbox.py metin.txt public/ses.wav referans.wav`
 Referans: kullanıcının verdiği 10-20 sn temiz ses. Ahmet (edge-tts) sesi kullanılmaz.
 
-Remotion skill'leri `.agents/skills/` altında (Claude Code için `.claude/skills/` symlink).
+Her videodan önce `TASARIM_REHBERI.md` oku ve TREATMENT yaz. Stil: `STIL_CIDDI.md` (açık tema). Remotion skill'leri `.agents/skills/` altında (Claude Code için `.claude/skills/` symlink).
