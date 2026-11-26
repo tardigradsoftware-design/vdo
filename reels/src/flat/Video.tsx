@@ -34,7 +34,7 @@ export const Baslik: React.FC<{metin: string; an: number; boyut?: number; renk?:
 };
 
 // Altyazı: beyaz yuvarlak kart, lacivert yazı, konuşulan kelime royal blue
-const Altyazi: React.FC<{kelimeler: Kelime[]; vurgu: string[]}> = ({kelimeler, vurgu}) => {
+export const Altyazi: React.FC<{kelimeler: Kelime[]; vurgu: string[]}> = ({kelimeler, vurgu}) => {
   const f = useCurrentFrame();
   const g: Kelime[][] = []; let c: Kelime[] = [];
   for (const k of kelimeler) { c.push(k); if (c.length === 4 || /[.,!?;:]$/.test(k.kelime)) { g.push(c); c = []; } }

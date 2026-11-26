@@ -71,3 +71,10 @@ Kullanıcı storyboard isterse 6-9 anahtar kareyi tek görselde göster, onay be
 - Seviyeler: konuşma ≈ −19 LUFS (ham) · müzik konuşmanın ~14 dB altında (volume ≈ 0,13) · ambiyans neredeyse duyulmaz (volume ≈ 0,015) · efektler 0,15–0,55.
 - Render sonrası: `ffmpeg -i ham.mp4 -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k son.mp4`
 - Her stem'in LUFS değerini ölç (ebur128), ambiyans konuşmadan yüksekse hata var.
+
+## 11. 3D (React Three Fiber) notları
+- Render: `npx remotion render <ID> out/x.mp4 --gl=angle` (yazılım GL, ~3 dk / 23 sn video).
+- `@react-three/postprocessing` ThreeCanvas'ta boş kare veriyor → kullanma; vinyet/derinlik CSS katmanı + fog ile.
+- Dikey kadrajda yatay görüş dar: fov 40, nesne genişliği × ~2,8 kamera mesafesi.
+- Ufuksuz stüdyo: meshBasic zemin (arka planla aynı renk) + shadowMaterial gölge düzlemi. Tone mapping kapalı (palet birebir).
+- Yazı/arayüz: canvas dokusu (fontlar yüklendikten sonra). Kod: src/uc/*, örnek src/videolar/VID003U.tsx

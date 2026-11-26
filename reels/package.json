@@ -17,6 +17,9 @@
     "@fontsource/playfair-display": "^5.3.0",
     "@fontsource/plus-jakarta-sans": "^5.3.0",
     "@fontsource/unbounded": "^5.3.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@react-three/postprocessing": "^3.2.2",
     "@remotion/animation-utils": "4.0.547",
     "@remotion/cli": "4.0.547",
     "@remotion/effects": "4.0.547",
@@ -31,12 +34,16 @@
     "@remotion/noise": "4.0.547",
     "@remotion/paths": "4.0.547",
     "@remotion/shapes": "4.0.547",
+    "@remotion/three": "4.0.547",
     "@remotion/transitions": "^4.0.547",
+    "@types/three": "^0.187.0",
     "lottie-web": "^5.13.0",
     "lucide-react": "^1.81.0",
+    "postprocessing": "^6.39.6",
     "react": "19.3.1",
     "react-dom": "19.3.1",
-    "remotion": "4.0.547"
+    "remotion": "4.0.547",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.547",
