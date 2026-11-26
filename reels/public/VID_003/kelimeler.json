@@ -1,0 +1,232 @@
+[
+ {
+  "kelime": "Bankadan",
+  "baslangic": 0.29,
+  "bitis": 0.58
+ },
+ {
+  "kelime": "kredi",
+  "baslangic": 0.58,
+  "bitis": 0.95
+ },
+ {
+  "kelime": "çekerken",
+  "baslangic": 0.95,
+  "bitis": 1.59
+ },
+ {
+  "kelime": "kesilen",
+  "baslangic": 1.59,
+  "bitis": 2.1
+ },
+ {
+  "kelime": "o",
+  "baslangic": 2.1,
+  "bitis": 2.17
+ },
+ {
+  "kelime": "binlerce",
+  "baslangic": 2.17,
+  "bitis": 2.75
+ },
+ {
+  "kelime": "liralık",
+  "baslangic": 2.75,
+  "bitis": 3.33
+ },
+ {
+  "kelime": "hayat",
+  "baslangic": 3.33,
+  "bitis": 3.7
+ },
+ {
+  "kelime": "sigortası",
+  "baslangic": 3.7,
+  "bitis": 4.43
+ },
+ {
+  "kelime": "aslında",
+  "baslangic": 4.43,
+  "bitis": 5.02
+ },
+ {
+  "kelime": "yasal",
+  "baslangic": 5.02,
+  "bitis": 5.37
+ },
+ {
+  "kelime": "olarak",
+  "baslangic": 5.37,
+  "bitis": 6
+ },
+ {
+  "kelime": "zorunlu",
+  "baslangic": 6,
+  "bitis": 6.21
+ },
+ {
+  "kelime": "değil.",
+  "baslangic": 6.21,
+  "bitis": 6.62
+ },
+ {
+  "kelime": "Banka",
+  "baslangic": 6.62,
+  "bitis": 7.18
+ },
+ {
+  "kelime": "sana",
+  "baslangic": 7.18,
+  "bitis": 7.34
+ },
+ {
+  "kelime": "mecburi",
+  "baslangic": 7.34,
+  "bitis": 7.9
+ },
+ {
+  "kelime": "gibi",
+  "baslangic": 7.9,
+  "bitis": 8.21
+ },
+ {
+  "kelime": "gösterse",
+  "baslangic": 8.21,
+  "bitis": 8.94
+ },
+ {
+  "kelime": "de",
+  "baslangic": 8.94,
+  "bitis": 9.11
+ },
+ {
+  "kelime": "krediyi",
+  "baslangic": 9.11,
+  "bitis": 9.66
+ },
+ {
+  "kelime": "aldıktan",
+  "baslangic": 9.66,
+  "bitis": 10.43
+ },
+ {
+  "kelime": "sonra",
+  "baslangic": 10.43,
+  "bitis": 10.78
+ },
+ {
+  "kelime": "şubeye",
+  "baslangic": 10.78,
+  "bitis": 11.34
+ },
+ {
+  "kelime": "bile",
+  "baslangic": 11.34,
+  "bitis": 11.66
+ },
+ {
+  "kelime": "gitmeden",
+  "baslangic": 11.66,
+  "bitis": 12.3
+ },
+ {
+  "kelime": "poliçeyi",
+  "baslangic": 12.3,
+  "bitis": 13.02
+ },
+ {
+  "kelime": "iptal",
+  "baslangic": 13.02,
+  "bitis": 13.42
+ },
+ {
+  "kelime": "edip",
+  "baslangic": 13.42,
+  "bitis": 13.91
+ },
+ {
+  "kelime": "paranı",
+  "baslangic": 13.91,
+  "bitis": 14.14
+ },
+ {
+  "kelime": "kuruşu",
+  "baslangic": 14.14,
+  "bitis": 14.49
+ },
+ {
+  "kelime": "kuruşuna",
+  "baslangic": 14.49,
+  "bitis": 14.94
+ },
+ {
+  "kelime": "geri",
+  "baslangic": 14.94,
+  "bitis": 15.14
+ },
+ {
+  "kelime": "alabilirsin.",
+  "baslangic": 15.14,
+  "bitis": 15.92
+ },
+ {
+  "kelime": "Yorumlara",
+  "baslangic": 15.92,
+  "bitis": 16.58
+ },
+ {
+  "kelime": "SİGORTA",
+  "baslangic": 16.58,
+  "bitis": 17.07
+ },
+ {
+  "kelime": "yaz,",
+  "baslangic": 17.07,
+  "bitis": 17.48
+ },
+ {
+  "kelime": "kredi",
+  "baslangic": 17.48,
+  "bitis": 17.77
+ },
+ {
+  "kelime": "hayat",
+  "baslangic": 17.77,
+  "bitis": 18.34
+ },
+ {
+  "kelime": "sigortası",
+  "baslangic": 18.34,
+  "bitis": 18.84
+ },
+ {
+  "kelime": "parasını",
+  "baslangic": 18.84,
+  "bitis": 19.57
+ },
+ {
+  "kelime": "geri",
+  "baslangic": 19.57,
+  "bitis": 19.85
+ },
+ {
+  "kelime": "alma",
+  "baslangic": 19.85,
+  "bitis": 20.14
+ },
+ {
+  "kelime": "rehberini",
+  "baslangic": 20.14,
+  "bitis": 20.77
+ },
+ {
+  "kelime": "hemen",
+  "baslangic": 20.77,
+  "bitis": 21.2
+ },
+ {
+  "kelime": "göndereyim.",
+  "baslangic": 21.2,
+  "bitis": 22.24
+ }
+]
