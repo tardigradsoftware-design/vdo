@@ -10,7 +10,7 @@ export const Satir: React.FC<{an: number; children: React.ReactNode; boyut?: num
   const s = yay(f, an, fps, 20, 140);
   return (
     <div style={{overflow: "hidden", paddingBottom: boyut * 0.12, ...style}}>
-      <div style={{fontFamily: SERIF, fontWeight: italik ? 700 : 900, fontStyle: italik ? "italic" : "normal", fontSize: boyut, lineHeight: 1.0, letterSpacing: -2, color: renk, transform: `translateY(${(1 - s) * 110}%)`, opacity: f < an ? 0 : 1}}>{children}</div>
+      <div style={{fontFamily: SERIF, fontWeight: italik ? 700 : 900, fontStyle: italik ? "italic" : "normal", fontSize: boyut, lineHeight: 1.0, letterSpacing: -2, color: renk, transform: `translateY(${(1 - s) * 110}%)`, filter: `blur(${(1 - s) * 12}px)`, opacity: f < an ? 0 : 1}}>{children}</div>
     </div>
   );
 };
@@ -48,13 +48,17 @@ export const Belge: React.FC<{an: number; children: React.ReactNode; aci?: numbe
         padding: "48px 54px",
         borderRadius: 6,
         boxShadow: "0 40px 80px rgba(0,0,0,0.55), 0 8px 20px rgba(0,0,0,0.4)",
-        transform: `translateY(${(1 - s) * 260}px) rotate(${aci + (1 - s) * 6}deg) scale(${0.92 + s * 0.08})`,
+        transform: `perspective(1600px) translateY(${(1 - s) * 260}px) rotateX(${(1 - s) * 28 + Math.sin((f - an) / 40) * 2}deg) rotateY(${Math.sin((f - an) / 55) * 4}deg) rotate(${aci + (1 - s) * 6}deg) scale(${0.92 + s * 0.08})`,
+        position: "relative",
         opacity: f < an ? 0 : Math.min(1, s * 1.6),
         backgroundImage: "repeating-linear-gradient(0deg, transparent 0 46px, #0000000c 46px 47px)",
         ...style,
       }}
     >
       {children}
+      <div style={{position: "absolute", inset: 0, overflow: "hidden", borderRadius: 6, pointerEvents: "none"}}>
+        <div style={{position: "absolute", top: 0, bottom: 0, width: 220, left: interpolate(f - an, [10, 40], [-300, en + 300], {extrapolateLeft: "clamp", extrapolateRight: "clamp"}), background: "linear-gradient(100deg, transparent, rgba(255,255,255,0.55), transparent)", transform: "skewX(-18deg)"}} />
+      </div>
     </div>
   );
 };

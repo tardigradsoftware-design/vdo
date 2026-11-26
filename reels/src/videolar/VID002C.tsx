@@ -8,9 +8,9 @@ import {CSfx, CVideo} from "../ciddi/Video";
 import {C, MONO, SANS, SERIF} from "../ciddi/tema";
 
 const K = kelimeler as Kelime[];
-const t = zamanlayici(K);
+export const t = zamanlayici(K);
 export const VID002C_SURE = kare(K[K.length - 1].bitis) + 30;
-const SINIR = [0, t("adına", 0), t("Çoğu"), t("Ama"), t("Yorumlara"), VID002C_SURE];
+export const SINIR = [0, t("adına", 0), t("Çoğu"), t("Ama"), t("Yorumlara"), VID002C_SURE];
 const Pos: React.FC<{x: number; y: number; children: React.ReactNode; w?: number}> = ({x, y, w, children}) => <div style={{position: "absolute", left: x, top: y, width: w}}>{children}</div>;
 
 // --- S1: Veri sızıntısı ---
@@ -33,10 +33,10 @@ const Tarama: React.FC = () => {
   const y = (Math.sin(f / 10) * 0.5 + 0.5) * 260;
   return <div style={{position: "absolute", left: -20, right: -20, top: y, height: 5, background: C.kirmizi, boxShadow: `0 0 30px ${C.kirmizi}`}} />;
 };
-const S1: React.FC<{o: number}> = ({o}) => (
+export const S1: React.FC<{o: number}> = ({o}) => (
   <AbsoluteFill>
     <Pos x={100} y={170}><Ust an={0} renk={C.kirmizi}>VERİ İHLALİ</Ust></Pos>
-    <Pos x={780} y={110}><div style={{position: "relative"}}><CizgiIkon an={0} Ikon={Fingerprint} boyut={210} renk={C.yazi} /><Tarama /></div></Pos>
+    <Pos x={800} y={170}><div style={{position: "relative"}}><CizgiIkon an={0} Ikon={Fingerprint} boyut={180} renk={C.yazi} /><Tarama /></div></Pos>
     <Pos x={100} y={260}>
       <Satir an={t("Kimlik") - o} boyut={130}>Kimlik</Satir>
       <Satir an={t("bilgilerin") - o} boyut={130}>bilgilerin</Satir>
@@ -65,7 +65,7 @@ const Bar: React.FC<{an: number}> = ({an}) => {
   const p = interpolate(f - an, [0, 14], [0, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp"});
   return <div style={{display: "flex", alignItems: "center", gap: 12, fontFamily: MONO, fontWeight: 700, fontSize: 40, color: C.kirmizi, opacity: f >= an ? 1 : 0}}>₺<div style={{width: 260 * p, height: 30, background: C.kirmizi, boxShadow: `0 0 20px ${C.kirmizi}88`}} /></div>;
 };
-const S2: React.FC<{o: number}> = ({o}) => (
+export const S2: React.FC<{o: number}> = ({o}) => (
   <AbsoluteFill>
     <Pos x={100} y={160}><Ust an={0}>TİCARET SİCİLİ</Ust></Pos>
     <Pos x={130} y={240}>
@@ -87,7 +87,7 @@ const S2: React.FC<{o: number}> = ({o}) => (
 );
 
 // --- S3: Haciz ---
-const S3: React.FC<{o: number}> = ({o}) => (
+export const S3: React.FC<{o: number}> = ({o}) => (
   <AbsoluteFill>
     <Pos x={100} y={170}>
       <Satir an={0} boyut={84}>Çoğu kişi</Satir>
@@ -146,7 +146,7 @@ const Telefon: React.FC<{o: number}> = ({o}) => {
     </div>
   );
 };
-const S4: React.FC<{o: number}> = ({o}) => (
+export const S4: React.FC<{o: number}> = ({o}) => (
   <AbsoluteFill>
     <Pos x={100} y={160}><Ust an={0}>ÇÖZÜM</Ust></Pos>
     <Pos x={100} y={230}>
@@ -172,7 +172,7 @@ const Yaz: React.FC<{an: number; metin: string}> = ({an, metin}) => {
   const n = Math.max(0, Math.min(metin.length, Math.floor((f - an) / 3) + 1));
   return <>{f >= an ? metin.slice(0, n) : ""}<span style={{opacity: Math.floor(f / 9) % 2 ? 0 : 1, color: C.kirmizi}}>▍</span></>;
 };
-const S5: React.FC<{o: number}> = ({o}) => (
+export const S5: React.FC<{o: number}> = ({o}) => (
   <AbsoluteFill>
     <Pos x={100} y={160}><Ust an={0}>ÜCRETSİZ REHBER</Ust></Pos>
     <Pos x={100} y={230}><Satir an={0} boyut={92}>Yorumlara yaz:</Satir></Pos>
@@ -191,7 +191,7 @@ const S5: React.FC<{o: number}> = ({o}) => (
   </AbsoluteFill>
 );
 
-const DARBELER = [t("sızdıysa"), t("sokulabilirsin"), t("haciz"), t("kuramıyor")];
+export const DARBELER = [t("sızdıysa"), t("sokulabilirsin"), t("haciz"), t("kuramıyor")];
 
 export const VID002C: React.FC = () => (
   <CVideo sahneler={[S1, S2, S3, S4, S5]} sinir={SINIR} darbeler={DARBELER} kelimeler={K} ses="VID_002/ses.mp3" vurgu={["KORUMA"]}>
