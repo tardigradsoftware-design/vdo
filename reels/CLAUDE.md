@@ -14,5 +14,10 @@ Kullanıcıya her zaman kısa ve öz yaz.
 ## Kurulum (yeni container'da)
 - `npm install`
 - `NODE_USE_ENV_PROXY=1 node scripts/install-whisper.mjs` (whisper.cpp 1.7.4 + model, ~1.6 GB)
+- `bash scripts/setup-tts.sh` (Chatterbox, `.venv-tts/`)
+
+## Ses üretimi (Chatterbox, ücretsiz, yerel)
+`HF_HUB_DISABLE_XET=1 .venv-tts/bin/python scripts/tts_chatterbox.py metin.txt public/ses.wav referans.wav`
+Referans: kullanıcının verdiği 10-20 sn temiz ses. Ahmet (edge-tts) sesi kullanılmaz.
 
 Remotion skill'leri `.agents/skills/` altında (Claude Code için `.claude/skills/` symlink).
