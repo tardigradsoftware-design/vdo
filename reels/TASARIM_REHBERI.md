@@ -65,3 +65,9 @@ Kullanıcı storyboard isterse 6-9 anahtar kareyi tek görselde göster, onay be
 - Remotion markup kuralları: CSS transition yok; `interpolate` + `Easing.bezier(0.16,1,0.3,1)`; `scale/translate/rotate` özellikleri.
 - Skill'ler (`.claude/skills/`): remotion-* (resmi), lemo-opuscar (66 film stili; kütüphane `/home/user/kaynaklar/lemo-opuscar`), belgesel, motion-grafik, reklam-filmi, konusan-maskot (sese göre ağız oynatma), kil-animasyon, 3d-animasyon, cizgi-film, efekt-katalogu (9 efekt), animasyon-rehberi, taste-skill, earshot + real-sound (ses analizi; kurulum onay bekliyor).
 - Referans arşivleri (`/home/user/kaynaklar/`): mg-styles-15 (15 hareketli grafik stili + promptlar), awesome-opus5-5-videos (700 viral video promptu), opus-video-prompts.
+
+## 10. Ses karışımı (hata sonrası eklendi)
+- Ses dosyaları normalize edilir ama doyurma/tanh kırpma YOK (bozulma yapar).
+- Seviyeler: konuşma ≈ −19 LUFS (ham) · müzik konuşmanın ~14 dB altında (volume ≈ 0,13) · ambiyans neredeyse duyulmaz (volume ≈ 0,015) · efektler 0,15–0,55.
+- Render sonrası: `ffmpeg -i ham.mp4 -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k son.mp4`
+- Her stem'in LUFS değerini ölç (ebur128), ambiyans konuşmadan yüksekse hata var.

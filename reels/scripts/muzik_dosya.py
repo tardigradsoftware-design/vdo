@@ -9,7 +9,7 @@ def kaydet(yol, x):
     os.makedirs(os.path.dirname(yol), exist_ok=True)
     x = np.asarray(x, float)
     if x.ndim == 1: x = np.stack([x, x], 1)
-    x = np.tanh(x / (np.max(np.abs(x)) + 1e-9) * 1.2) * 0.85  # yumuşak kırpma
+    x = x / (np.max(np.abs(x)) + 1e-9) * 0.89  # temiz normalize, kırpma/doyurma yok
     with wave.open(yol, "wb") as w:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes((x * 32767).astype(np.int16).tobytes())
 def t(s): return np.arange(int(SR * s)) / SR

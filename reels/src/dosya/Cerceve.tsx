@@ -103,8 +103,8 @@ export const DosyaVideo: React.FC<{
       <HUD dosya={dosya} bolumler={bolumler} />
       <Bant kelimeler={kelimeler} anahtar={anahtar} />
       <Audio src={staticFile(`${klasor}/ses.mp3`)} />
-      <Audio src={staticFile(`${klasor}/muzik.wav`)} volume={0.34} />
-      <Audio src={staticFile(`${klasor}/ambiyans.wav`)} volume={0.5} />
+      <Audio src={staticFile(`${klasor}/muzik.wav`)} volume={0.13} />
+      <Audio src={staticFile(`${klasor}/ambiyans.wav`)} volume={0.015} />
       {children}
     </AbsoluteFill>
   );
