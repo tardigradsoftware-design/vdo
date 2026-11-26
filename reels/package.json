@@ -9,7 +9,10 @@
   },
   "private": true,
   "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
     "@fontsource/unbounded": "^5.3.0",
     "@remotion/cli": "4.0.547",
     "@remotion/install-whisper-cpp": "^4.0.547",
