@@ -9,6 +9,7 @@ import {VID003F, VID003F_SURE} from "./videolar/VID003F";
 import {Test3D} from "./uc/Test3D";
 import {VID003U, VID003U_SURE} from "./videolar/VID003U";
 import {VID004H, VID004H_SURE} from "./videolar/VID004H";
+import {D001, D001_SURE} from "./videolar/D001";
 import {FPS, H, W} from "./ortak/stil";
 
 export const RemotionRoot: React.FC = () => {
@@ -24,6 +25,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Test3D" component={Test3D} durationInFrames={30} fps={FPS} width={W} height={H} />
       <Composition id="VID003U" component={VID003U} durationInFrames={VID003U_SURE} fps={FPS} width={W} height={H} />
       <Composition id="VID004H" component={VID004H} durationInFrames={VID004H_SURE} fps={FPS} width={W} height={H} />
+      <Composition id="D001" component={D001} durationInFrames={D001_SURE} fps={FPS} width={W} height={H} />
     </>
   );
 };

@@ -1,0 +1,227 @@
+[
+ {
+  "kelime": "e-Devlet'te",
+  "baslangic": 0.01,
+  "bitis": 0.45
+ },
+ {
+  "kelime": "adına",
+  "baslangic": 0.45,
+  "bitis": 0.82
+ },
+ {
+  "kelime": "birikmiş",
+  "baslangic": 0.82,
+  "bitis": 1.15
+ },
+ {
+  "kelime": "ama",
+  "baslangic": 1.15,
+  "bitis": 1.29
+ },
+ {
+  "kelime": "haberin",
+  "baslangic": 1.29,
+  "bitis": 1.62
+ },
+ {
+  "kelime": "bile",
+  "baslangic": 1.62,
+  "bitis": 1.81
+ },
+ {
+  "kelime": "olmadığı",
+  "baslangic": 1.81,
+  "bitis": 2.4
+ },
+ {
+  "kelime": "devletin",
+  "baslangic": 2.4,
+  "bitis": 2.74
+ },
+ {
+  "kelime": "sana",
+  "baslangic": 2.74,
+  "bitis": 2.91
+ },
+ {
+  "kelime": "ödemeyi",
+  "baslangic": 2.91,
+  "bitis": 3.24
+ },
+ {
+  "kelime": "beklediği",
+  "baslangic": 3.24,
+  "bitis": 3.74
+ },
+ {
+  "kelime": "bir",
+  "baslangic": 3.74,
+  "bitis": 3.84
+ },
+ {
+  "kelime": "para",
+  "baslangic": 3.84,
+  "bitis": 3.97
+ },
+ {
+  "kelime": "olabilir.",
+  "baslangic": 3.97,
+  "bitis": 4.33
+ },
+ {
+  "kelime": "Sağlık",
+  "baslangic": 4.33,
+  "bitis": 4.75
+ },
+ {
+  "kelime": "iadeleri,",
+  "baslangic": 4.75,
+  "bitis": 5.16
+ },
+ {
+  "kelime": "eski",
+  "baslangic": 5.16,
+  "bitis": 5.34
+ },
+ {
+  "kelime": "sigorta",
+  "baslangic": 5.34,
+  "bitis": 5.66
+ },
+ {
+  "kelime": "alacakları",
+  "baslangic": 5.66,
+  "bitis": 6.16
+ },
+ {
+  "kelime": "veya",
+  "baslangic": 6.16,
+  "bitis": 6.34
+ },
+ {
+  "kelime": "unutulan",
+  "baslangic": 6.34,
+  "bitis": 6.79
+ },
+ {
+  "kelime": "otomatik",
+  "baslangic": 6.79,
+  "bitis": 7.06
+ },
+ {
+  "kelime": "emeklilik",
+  "baslangic": 7.06,
+  "bitis": 7.48
+ },
+ {
+  "kelime": "kesintileri",
+  "baslangic": 7.48,
+  "bitis": 7.97
+ },
+ {
+  "kelime": "zamanında",
+  "baslangic": 7.97,
+  "bitis": 8.43
+ },
+ {
+  "kelime": "çekilmezse",
+  "baslangic": 8.43,
+  "bitis": 8.93
+ },
+ {
+  "kelime": "zamanaşımına",
+  "baslangic": 8.93,
+  "bitis": 9.62
+ },
+ {
+  "kelime": "uğrayıp",
+  "baslangic": 9.62,
+  "bitis": 10.07
+ },
+ {
+  "kelime": "devlete",
+  "baslangic": 10.07,
+  "bitis": 10.36
+ },
+ {
+  "kelime": "geçiyor.",
+  "baslangic": 10.36,
+  "bitis": 11.16
+ },
+ {
+  "kelime": "Yorumlara",
+  "baslangic": 11.16,
+  "bitis": 11.52
+ },
+ {
+  "kelime": "PARA",
+  "baslangic": 11.52,
+  "bitis": 11.7
+ },
+ {
+  "kelime": "yaz,",
+  "baslangic": 11.7,
+  "bitis": 11.94
+ },
+ {
+  "kelime": "e-Devlet'ten",
+  "baslangic": 11.94,
+  "bitis": 12.54
+ },
+ {
+  "kelime": "unutulan",
+  "baslangic": 12.54,
+  "bitis": 12.79
+ },
+ {
+  "kelime": "paralarını",
+  "baslangic": 12.79,
+  "bitis": 13.34
+ },
+ {
+  "kelime": "saniyeler",
+  "baslangic": 13.34,
+  "bitis": 13.74
+ },
+ {
+  "kelime": "içinde",
+  "baslangic": 13.74,
+  "bitis": 14.07
+ },
+ {
+  "kelime": "sorgulama",
+  "baslangic": 14.07,
+  "bitis": 14.48
+ },
+ {
+  "kelime": "ve",
+  "baslangic": 14.48,
+  "bitis": 14.57
+ },
+ {
+  "kelime": "hesabına",
+  "baslangic": 14.57,
+  "bitis": 14.98
+ },
+ {
+  "kelime": "çekme",
+  "baslangic": 14.98,
+  "bitis": 15.25
+ },
+ {
+  "kelime": "rehberini",
+  "baslangic": 15.25,
+  "bitis": 15.67
+ },
+ {
+  "kelime": "hemen",
+  "baslangic": 15.67,
+  "bitis": 15.9
+ },
+ {
+  "kelime": "göndereyim.",
+  "baslangic": 15.9,
+  "bitis": 16.76
+ }
+]

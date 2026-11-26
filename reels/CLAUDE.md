@@ -21,3 +21,10 @@ Kullanıcıya her zaman kısa ve öz yaz.
 Referans: kullanıcının verdiği 10-20 sn temiz ses. Ahmet (edge-tts) sesi kullanılmaz.
 
 Her videodan önce `TASARIM_REHBERI.md` oku ve TREATMENT yaz. Stil: `STIL_CIDDI.md` (açık tema). Remotion skill'leri `.agents/skills/` altında (Claude Code için `.claude/skills/` symlink).
+
+## Seri üretim (dava dosyası şablonu, ses 1,45x) — STANDART
+1. Drive "kisa sesler" → `VID_xxx_kisa.mp3` indir; `ffmpeg -i in.mp3 -af atempo=1.45 public/Dxxx/ses.mp3`
+2. `node scripts/transcribe.mjs public/Dxxx/ses.mp3` → `public/Dxxx/kelimeler.json`; yazımı kisa_tts.csv'ye göre düzelt.
+3. `src/videolar/Dxxx.tsx`: sadece `DVurus[]` veri listesi (örnek: D001.tsx). Root.tsx'e kaydet.
+4. `.venv-tts/bin/python scripts/muzik_dosya.py public/Dxxx <mühür saniyeleri,virgüllü>`
+5. Render → loudnorm −14 LUFS → saniyede 1,5 kare kontrol → gönder.

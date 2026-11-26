@@ -81,46 +81,22 @@ def pad(akor, s):
     return filt(x, hi=1500) * env(len(tt), 0.3, 0.6) * 0.07
 def zil(m): tt = t(1.6); return sum(np.sin(2 * np.pi * n2f(m) * h * tt) * np.exp(-tt * (3 + h * 2)) / h for h in (1, 2.76, 5.4)) * 0.18
 
-basla_sirket = zt("adına"); cogu = zt("Çoğu"); haciz = zt("haciz"); ama = zt("Ama"); kur = zt("kuramıyor"); yorum = zt("Yorumlara")
-basdizi = [38, 38, 45, 38, 41, 41, 43, 40]  # D minör sinsi
-# A: 0 → çoğu (bas + şıklatma, şirketten sonra kick)
+muhurler = [float(x) for x in sys.argv[2].split(",")] if len(sys.argv) > 2 and sys.argv[2] else []
+basdizi = [38, 38, 45, 38, 41, 41, 43, 40]
 i = 0; x = 0.0
-while x < cogu - 0.05:
-    ekle(kare_bas(basdizi[i % 8], E * 0.9), x)
-    if i % 4 == 2: ekle(snap(), x, (0.8, 1))
-    if x >= basla_sirket:
+while x < SON - 0.6:
+    sus = any(m - 0.32 <= x < m + 0.05 for m in muhurler)
+    if not sus:
+        ekle(kare_bas(basdizi[i % 8] + (12 if (i // 32) % 2 else 0) * 0, E * 0.9), x)
         if i % 4 == 0: ekle(kick(), x)
         if i % 4 == 2: ekle(clap(), x)
-        ekle(hat(0.18 if i % 2 else 0.1), x, (0.9, 1))
+        if i % 4 == 2: ekle(snap(), x, (0.8, 1))
+        ekle(hat(0.16 if i % 2 else 0.08), x, (0.9, 1))
+        if i % 2 == 0 and (i // 16) % 2 == 1: ekle(marimba([74, 77, 81, 79, 77, 76, 74, 72][(i // 2) % 8]) * 0.7, x, (1, 0.8))
     i += 1; x += E
-# B: trampet rulosu + yükseliş → sessizlik → (mühür foley'de)
-sus1 = haciz - 0.32
-x = cogu; aralik = E
-while x < sus1:
-    ekle(snare() * (0.3 + 0.7 * (x - cogu) / (sus1 - cogu)), x); aralik = max(0.04, aralik * 0.86); x += aralik
-yuk = t(sus1 - cogu); f = 150 * (12 ** (yuk / yuk[-1]))
-ekle((np.sin(2 * np.pi * np.cumsum(f) / SR) * 0.15 + filt(rng.standard_normal(len(yuk)), lo=1500) * 0.25) * (yuk / yuk[-1]) ** 2, cogu)
-# mühürden sonra hüzünlü tek pad
-ekle(pad([50, 53, 57], ama - haciz - 0.2), haciz + 0.25)
-# C: dönüm, parlak marimba + groove → sessizlik → mühür
-sus2 = kur - 0.36
-melodi = [74, 76, 77, 79, 81, 79, 77, 76, 74, 77, 81, 84]
-i = 0; x = ama
-while x < sus2:
-    if i % 2 == 0: ekle(marimba(melodi[(i // 2) % len(melodi)]), x, (1, 0.8) if i % 4 else (0.8, 1))
-    ekle(kare_bas([50, 50, 57, 50, 53, 53, 55, 57][i % 8], E * 0.9), x)
-    if i % 4 == 0: ekle(kick(), x)
-    if i % 4 == 2: ekle(clap(), x)
-    ekle(hat(0.15), x, (0.9, 1)); i += 1; x += E
-# D: kapanış groove + çan etiketi
-i = 0; x = kur + 0.5
-while x < SON - 0.6:
-    ekle(kare_bas([50, 50, 57, 50, 55, 55, 53, 52][i % 8], E * 0.9), x)
-    if i % 4 == 0: ekle(kick(), x)
-    if i % 4 == 2: ekle(clap(), x)
-    if i % 2 == 0: ekle(marimba([86, 81, 77, 81][(i // 2) % 4], 0.4) * 0.6, x)
-    ekle(hat(0.15), x, (0.9, 1)); i += 1; x += E
-for k, m in enumerate([74, 78, 81, 86]): ekle(zil(m), zt("göndereyim") + 0.25 + k * 0.12)
+for m in muhurler:  # mühür öncesi kısa trampet rulosu
+    y = m - 1.0; a = E
+    while y < m - 0.35: ekle(snare() * 0.5, y); a = max(0.04, a * 0.8); y += a
 fade = int(SR * 0.6); L[-fade:] *= np.linspace(1, 0, fade); R[-fade:] *= np.linspace(1, 0, fade)
 kaydet(f"{klasor}/muzik.wav", np.stack([L, R], 1))
 # Ambiyans: kâğıt odası (çok kısık, sürekli)
