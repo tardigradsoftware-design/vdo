@@ -1,0 +1,242 @@
+[
+ {
+  "kelime": "Özel",
+  "baslangic": 0.01,
+  "bitis": 0.25
+ },
+ {
+  "kelime": "hastanenin",
+  "baslangic": 0.25,
+  "bitis": 0.75
+ },
+ {
+  "kelime": "acil",
+  "baslangic": 0.75,
+  "bitis": 0.95
+ },
+ {
+  "kelime": "servisine",
+  "baslangic": 0.95,
+  "bitis": 1.4
+ },
+ {
+  "kelime": "gittiğinde",
+  "baslangic": 1.4,
+  "bitis": 1.98
+ },
+ {
+  "kelime": "senden",
+  "baslangic": 1.98,
+  "bitis": 2.32
+ },
+ {
+  "kelime": "muayene,",
+  "baslangic": 2.32,
+  "bitis": 2.82
+ },
+ {
+  "kelime": "tahlil",
+  "baslangic": 2.82,
+  "bitis": 3.15
+ },
+ {
+  "kelime": "veya",
+  "baslangic": 3.15,
+  "bitis": 3.39
+ },
+ {
+  "kelime": "serum",
+  "baslangic": 3.39,
+  "bitis": 3.72
+ },
+ {
+  "kelime": "ücreti",
+  "baslangic": 3.72,
+  "bitis": 4.16
+ },
+ {
+  "kelime": "aldılarsa",
+  "baslangic": 4.16,
+  "bitis": 4.58
+ },
+ {
+  "kelime": "bu",
+  "baslangic": 4.58,
+  "bitis": 4.74
+ },
+ {
+  "kelime": "yasal",
+  "baslangic": 4.74,
+  "bitis": 4.96
+ },
+ {
+  "kelime": "olarak",
+  "baslangic": 4.96,
+  "bitis": 5.31
+ },
+ {
+  "kelime": "tamamen",
+  "baslangic": 5.31,
+  "bitis": 5.71
+ },
+ {
+  "kelime": "yasak.",
+  "baslangic": 5.71,
+  "bitis": 6.24
+ },
+ {
+  "kelime": "SGK",
+  "baslangic": 6.24,
+  "bitis": 6.39
+ },
+ {
+  "kelime": "anlaşması",
+  "baslangic": 6.39,
+  "bitis": 6.94
+ },
+ {
+  "kelime": "olsun",
+  "baslangic": 6.94,
+  "bitis": 7.19
+ },
+ {
+  "kelime": "ya",
+  "baslangic": 7.19,
+  "bitis": 7.29
+ },
+ {
+  "kelime": "da",
+  "baslangic": 7.29,
+  "bitis": 7.39
+ },
+ {
+  "kelime": "olmasın,",
+  "baslangic": 7.39,
+  "bitis": 7.89
+ },
+ {
+  "kelime": "acil",
+  "baslangic": 7.89,
+  "bitis": 8.08
+ },
+ {
+  "kelime": "hallerde",
+  "baslangic": 8.08,
+  "bitis": 8.49
+ },
+ {
+  "kelime": "hiçbir",
+  "baslangic": 8.49,
+  "bitis": 8.85
+ },
+ {
+  "kelime": "özel",
+  "baslangic": 8.85,
+  "bitis": 9.16
+ },
+ {
+  "kelime": "hastane",
+  "baslangic": 9.16,
+  "bitis": 9.45
+ },
+ {
+  "kelime": "vatandaştan",
+  "baslangic": 9.45,
+  "bitis": 10.08
+ },
+ {
+  "kelime": "tek",
+  "baslangic": 10.08,
+  "bitis": 10.2
+ },
+ {
+  "kelime": "kuruş",
+  "baslangic": 10.2,
+  "bitis": 10.58
+ },
+ {
+  "kelime": "ilave",
+  "baslangic": 10.58,
+  "bitis": 10.76
+ },
+ {
+  "kelime": "ücret",
+  "baslangic": 10.76,
+  "bitis": 11.05
+ },
+ {
+  "kelime": "isteyemez.",
+  "baslangic": 11.05,
+  "bitis": 11.84
+ },
+ {
+  "kelime": "Yorumlara",
+  "baslangic": 11.84,
+  "bitis": 12.28
+ },
+ {
+  "kelime": "ACİL",
+  "baslangic": 12.28,
+  "bitis": 12.42
+ },
+ {
+  "kelime": "yaz,",
+  "baslangic": 12.42,
+  "bitis": 12.71
+ },
+ {
+  "kelime": "hastane",
+  "baslangic": 12.71,
+  "bitis": 12.97
+ },
+ {
+  "kelime": "faturanı",
+  "baslangic": 12.97,
+  "bitis": 13.38
+ },
+ {
+  "kelime": "nasıl",
+  "baslangic": 13.38,
+  "bitis": 13.66
+ },
+ {
+  "kelime": "geri",
+  "baslangic": 13.66,
+  "bitis": 13.84
+ },
+ {
+  "kelime": "alacağını",
+  "baslangic": 13.84,
+  "bitis": 14.39
+ },
+ {
+  "kelime": "gösteren",
+  "baslangic": 14.39,
+  "bitis": 14.8
+ },
+ {
+  "kelime": "adım",
+  "baslangic": 14.8,
+  "bitis": 15.03
+ },
+ {
+  "kelime": "adım",
+  "baslangic": 15.03,
+  "bitis": 15.26
+ },
+ {
+  "kelime": "rehberi",
+  "baslangic": 15.26,
+  "bitis": 15.58
+ },
+ {
+  "kelime": "hemen",
+  "baslangic": 15.58,
+  "bitis": 15.88
+ },
+ {
+  "kelime": "göndereyim.",
+  "baslangic": 15.88,
+  "bitis": 16.6
+ }
+]
