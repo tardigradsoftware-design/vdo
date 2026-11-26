@@ -1,9 +1,11 @@
-import { MyComposition } from "./Composition";
+import {Composition} from "remotion";
+import {VID001, VID001_SURE} from "./videolar/VID001";
+import {FPS, H, W} from "./ortak/stil";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <MyComposition />
+      <Composition id="VID001" component={VID001} durationInFrames={VID001_SURE} fps={FPS} width={W} height={H} />
     </>
   );
 };
