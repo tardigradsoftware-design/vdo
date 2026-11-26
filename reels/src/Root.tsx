@@ -10,7 +10,7 @@ import {Test3D} from "./uc/Test3D";
 import {VID003U, VID003U_SURE} from "./videolar/VID003U";
 import {VID004H, VID004H_SURE} from "./videolar/VID004H";
 import {D001, D001_SURE} from "./videolar/D001";
-import {Cizgi6} from "./cizgi/TekCizgi";
+import {Cizgi6, Cizgi6Dosya} from "./cizgi/TekCizgi";
 import {FPS, H, W} from "./ortak/stil";
 
 export const RemotionRoot: React.FC = () => {
@@ -28,6 +28,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="VID004H" component={VID004H} durationInFrames={VID004H_SURE} fps={FPS} width={W} height={H} />
       <Composition id="D001" component={D001} durationInFrames={D001_SURE} fps={FPS} width={W} height={H} />
       <Composition id="Cizgi6" component={Cizgi6} durationInFrames={180} fps={FPS} width={W} height={H} />
+      <Composition id="Cizgi6Dosya" component={Cizgi6Dosya} durationInFrames={180} fps={FPS} width={W} height={H} />
     </>
   );
 };
