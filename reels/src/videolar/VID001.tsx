@@ -4,6 +4,8 @@ import {Altyazi} from "../ortak/Altyazi";
 import {Damga, sarsinti} from "../ortak/Damga";
 import {Ikon, Yagmur} from "../ortak/Ikon";
 import {Ilerleme} from "../ortak/Ilerleme";
+import {Hareketli} from "../ortak/Hareketli";
+import {Fosfor, Harfler} from "../ortak/Harfler";
 import {Kart} from "../ortak/Kart";
 import {Sahne} from "../ortak/Sahne";
 import {MuzikYatagi, Sfx} from "../ortak/Sfx";
@@ -59,12 +61,14 @@ const S1: React.FC<{o: number}> = ({o}) => (
     </Konum>
     <Konum x={110} y={640}>
       <Kart giris={t("adına") - o} style={{padding: "50px 60px", width: 860}}>
-        <Gorunur an={t("adına") - o}><Baslik>ADINA</Baslik></Gorunur>
-        <Gorunur an={t("birikmiş") - o}><Baslik>BİRİKMİŞ</Baslik></Gorunur>
+        <Baslik><Harfler metin="ADINA" an={t("adına") - o} /></Baslik>
+        <Baslik><Fosfor an={t("birikmiş") - o + 8} renk={R.sari}><Harfler metin="BİRİKMİŞ" an={t("birikmiş") - o} /></Fosfor></Baslik>
         <Gorunur an={t("ama") - o}><Baslik renk={R.gri} boyut={64} style={{marginTop: 18, letterSpacing: -2}}>bir para olabilir</Baslik></Gorunur>
       </Kart>
     </Konum>
-    <Konum x={820} y={1230}><Ikon ad="face_screaming_in_fear" giris={t("haberin") - o + 4} boyut={170} /></Konum>
+    <Konum x={800} y={1200}><Hareketli ad="cigklik" giris={t("haberin") - o + 4} boyut={200} /></Konum>
+    <Konum x={720} y={190}><Hareketli ad="parilti" giris={6} boyut={150} /></Konum>
+    <Konum x={260} y={420}><Hareketli ad="parilti" giris={14} boyut={110} hiz={1.3} /></Konum>
     <Damga giris={t("haberin") - o} metin="HABERİN BİLE YOK" aci={-7} style={{top: 1080, left: 80}} />
   </AbsoluteFill>
 );
@@ -80,7 +84,7 @@ const Akis: React.FC<{bas: number}> = ({bas}) => {
         if (f - bas - i * 12 < 0) return null;
         const x = interpolate(d, [0, 36], [340, 700]);
         const y = 330 - Math.sin((d / 36) * Math.PI) * 90;
-        return <Img key={i} src={staticFile("ikon/money_with_wings.png")} style={{position: "absolute", left: x, top: y, width: 120, height: 120}} />;
+        return <Img key={i} src={staticFile("ikon/money_with_wings.png")} style={{position: "absolute", left: x, top: y, width: 120, height: 120, transform: `rotate(${Math.sin(d / 4) * 15}deg)`}} />;
       })}
     </>
   );
@@ -106,6 +110,8 @@ const S2: React.FC<{o: number}> = ({o}) => (
         <Gorunur an={t("beklediği") - o}><Etiket style={{marginTop: 24}}>ÖDEME BEKLİYOR</Etiket></Gorunur>
       </Kart>
     </Konum>
+    <Konum x={80} y={1180}><Hareketli ad="para_yuz" giris={t("para", 0) - o + 3} boyut={190} /></Konum>
+    <Konum x={470} y={350}><Hareketli ad="ucan_para" giris={t("sana") - o} boyut={140} /></Konum>
     <Damga giris={t("para", 0) - o} metin="SENİN PARAN" aci={5} boyut={80} style={{top: 1090, left: 250}} />
   </AbsoluteFill>
 );
@@ -129,6 +135,7 @@ const S3: React.FC<{o: number}> = ({o}) => {
       <Madde no="1" metin="Sağlık iadeleri" ikon="hospital" an={0} yon="sol" />
       <Madde no="2" metin="Eski sigorta alacakları" ikon="shield" an={t("eski") - o} yon="sag" />
       <Madde no="3" metin="Otomatik emeklilik kesintileri" ikon="briefcase" an={t("unutulan", 0) - o} yon="sol" />
+      <div style={{position: "absolute", left: 120, top: 1140}}><Hareketli ad="unlem" giris={t("kesintileri") - o + 2} boyut={170} /></div>
       <Damga giris={t("kesintileri") - o} metin="UNUTULDU" aci={-8} boyut={72} style={{top: 1130, right: 90}} />
     </AbsoluteFill>
   );
@@ -162,12 +169,14 @@ const S4: React.FC<{o: number}> = ({o}) => {
       <Konum x={110} y={480}>
         <Kart giris={0} yon="olcek" style={{padding: "50px 60px", width: 860, display: "flex", flexDirection: "column", alignItems: "center"}}>
           <Baslik boyut={56} renk={R.gri} style={{letterSpacing: -1}}>ZAMANINDA ÇEKİLMEZSE</Baslik>
-          <Gorunur an={t("zamanaşımına") - o}><Baslik boyut={92} style={{marginTop: 24}}>ZAMANAŞIMI</Baslik></Gorunur>
+          <Baslik boyut={92} style={{marginTop: 24}}><Harfler metin="ZAMANAŞIMI" an={t("zamanaşımına") - o} aralik={1.2} /></Baslik>
           <Bar bas={t("zamanaşımına") - o} son={t("devlete") - o} />
         </Kart>
       </Konum>
       <Konum x={790} y={950}><Ikon ad="classical_building" giris={t("uğrayıp") - o} boyut={230} /></Konum>
       <UcanCanta an={t("devlete") - o} />
+      <Konum x={130} y={150}><Hareketli ad="alarm" giris={4} boyut={200} /></Konum>
+      <Konum x={760} y={170}><Hareketli ad="siren" giris={t("devlete") - o} boyut={190} /></Konum>
       <Damga giris={t("devlete") - o} metin="DEVLETE GEÇİYOR" aci={-5} boyut={66} style={{top: 1220, left: 60}} />
     </AbsoluteFill>
   );
@@ -187,13 +196,12 @@ const Yazilan: React.FC<{an: number; metin: string}> = ({an, metin}) => {
 const Tik: React.FC<{an: number; metin: string}> = ({an, metin}) => (
   <Gorunur an={an}>
     <div style={{display: "flex", alignItems: "center", gap: 24, marginTop: 22}}>
-      <Img src={staticFile("ikon/check_mark_button.png")} style={{width: 72, height: 72}} />
+      <Hareketli ad="tik" giris={an} boyut={78} />
       <Baslik boyut={52} style={{letterSpacing: -2}}>{metin}</Baslik>
     </div>
   </Gorunur>
 );
 const S5: React.FC<{o: number}> = ({o}) => {
-  const f = useCurrentFrame();
   return (
     <AbsoluteFill>
       <Konum x={100} y={150}>
@@ -215,9 +223,9 @@ const S5: React.FC<{o: number}> = ({o}) => {
           <Tik an={t("çekme") - o} metin="Hesabına çek" />
         </Kart>
       </Konum>
-      <Konum x={790} y={1010}>
-        <Img src={staticFile("ikon/bell.png")} style={{width: 190, height: 190, opacity: f >= t("hemen") - o ? 1 : 0, transform: `rotate(${f >= t("hemen") - o ? Math.sin((f - t("hemen") + o) / 2) * 18 * Math.max(0.2, 1 - (f - t("hemen") + o) / 30) : 0}deg)`}} />
-      </Konum>
+      <Konum x={800} y={1000}><Hareketli ad="zil" giris={t("hemen") - o} boyut={200} /></Konum>
+      <Konum x={700} y={250}><Hareketli ad="yazan_el" giris={t("PARA") - o} boyut={170} /></Konum>
+      <Konum x={60} y={1230}><Hareketli ad="konfeti" giris={t("göndereyim") - o} boyut={190} /></Konum>
       <Damga giris={t("hemen") - o} metin="HEMEN GÖNDERİYORUM" renk={R.sari} yaziRengi={R.siyah} aci={-4} boyut={50} style={{top: 1110, left: 60}} />
     </AbsoluteFill>
   );
