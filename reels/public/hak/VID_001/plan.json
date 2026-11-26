@@ -1,0 +1,121 @@
+{
+ "id": "VID_001",
+ "category": "DEVLET DESTEĞİ",
+ "tone": "firsat",
+ "hookTitle": "ADINA BİRİKMİŞ PARA OLABİLİR",
+ "ctaKeyword": "PARA",
+ "beats": [
+  {
+   "anchor": "e-Devlet'te",
+   "card": {
+    "type": "hook"
+   },
+   "pose": "saskin"
+  },
+  {
+   "anchor": "haberin",
+   "card": {
+    "type": "icon",
+    "icons": [
+     "EyeSlash"
+    ],
+    "label": "HABERİN BİLE OLMADIĞI"
+   },
+   "pose": "saskin"
+  },
+  {
+   "anchor": "devletin",
+   "hit": "para",
+   "card": {
+    "type": "money",
+    "label": "ÖDEMEYİ BEKLEDİĞİ PARA"
+   },
+   "pose": "isaret"
+  },
+  {
+   "anchor": "Sağlık",
+   "card": {
+    "type": "icon",
+    "icons": [
+     "FirstAid"
+    ],
+    "label": "SAĞLIK İADELERİ"
+   },
+   "pose": "isaret"
+  },
+  {
+   "anchor": "eski",
+   "hit": "alacakları",
+   "card": {
+    "type": "money",
+    "label": "ESKİ SİGORTA ALACAKLARI"
+   },
+   "pose": "mutlu"
+  },
+  {
+   "anchor": "unutulan",
+   "card": {
+    "type": "icon",
+    "icons": [
+     "PiggyBank"
+    ],
+    "label": "OTOMATİK EMEKLİLİK KESİNTİLERİ"
+   },
+   "pose": "ciddi"
+  },
+  {
+   "anchor": "zamanında",
+   "card": {
+    "type": "alert",
+    "label": "ZAMANINDA ÇEKİLMEZSE"
+   },
+   "pose": "endiseli"
+  },
+  {
+   "anchor": "zamanaşımına",
+   "card": {
+    "type": "stamp",
+    "text": "ZAMANAŞIMI",
+    "color": "red"
+   },
+   "pose": "itiraz"
+  },
+  {
+   "anchor": "Yorumlara",
+   "card": {
+    "type": "cta"
+   },
+   "pose": "yorum"
+  }
+ ],
+ "emphasis": [
+  {
+   "word": "birikmiş",
+   "kind": "money"
+  },
+  {
+   "word": "para",
+   "kind": "money"
+  },
+  {
+   "word": "zamanaşımına",
+   "kind": "danger"
+  },
+  {
+   "word": "devlete",
+   "kind": "danger"
+  },
+  {
+   "word": "PARA",
+   "kind": "key"
+  },
+  {
+   "word": "saniyeler",
+   "kind": "key"
+  },
+  {
+   "word": "rehberini",
+   "kind": "key"
+  }
+ ]
+}
