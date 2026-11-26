@@ -47,7 +47,7 @@ export const Belge: React.FC<{an: number; children: React.ReactNode; aci?: numbe
         color: C.murekkep,
         padding: "48px 54px",
         borderRadius: 6,
-        boxShadow: "0 40px 80px rgba(0,0,0,0.55), 0 8px 20px rgba(0,0,0,0.4)",
+        boxShadow: "0 40px 80px rgba(40,30,10,0.25), 0 8px 20px rgba(40,30,10,0.15)", border: `1px solid ${C.cizgi}`,
         transform: `perspective(1600px) translateY(${(1 - s) * 260}px) rotateX(${(1 - s) * 28 + Math.sin((f - an) / 40) * 2}deg) rotateY(${Math.sin((f - an) / 55) * 4}deg) rotate(${aci + (1 - s) * 6}deg) scale(${0.92 + s * 0.08})`,
         position: "relative",
         opacity: f < an ? 0 : Math.min(1, s * 1.6),

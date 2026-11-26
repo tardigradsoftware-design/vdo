@@ -19,7 +19,7 @@ const VeriAkisi: React.FC<{an: number}> = ({an}) => {
   const satirlar = ["TC   1•••••••••8", "AD   M•••• Y••••", "DOĞ  ••.••.19••", "ADR  •••••• Mah.", "TEL  05•• ••• ••", "ANNE A••••", "TC   2•••••••••4", "AD   S•••• K••••"];
   const kay = Math.max(0, f - an) * 3.2;
   return (
-    <div style={{width: 880, height: 300, overflow: "hidden", border: `2px solid ${C.cizgi}`, borderRadius: 14, background: "#0D131BCC", padding: "16px 28px", maskImage: "linear-gradient(transparent, black 25%, black 75%, transparent)"}}>
+    <div style={{width: 880, height: 300, overflow: "hidden", border: `2px solid ${C.cizgi}`, borderRadius: 14, background: C.panel, padding: "16px 28px", maskImage: "linear-gradient(transparent, black 25%, black 75%, transparent)"}}>
       <div style={{transform: `translateY(${-kay % 330}px)`}}>
         {[...satirlar, ...satirlar].map((s, i) => (
           <div key={i} style={{fontFamily: MONO, fontWeight: 500, fontSize: 32, color: i % 3 === 0 ? C.kirmizi : C.soluk, lineHeight: 1.3, opacity: f >= an ? 1 : 0}}>{s}</div>
@@ -49,7 +49,7 @@ export const S1: React.FC<{o: number}> = ({o}) => (
 
 // --- S2: Adına şirket + borç ---
 const Defter: React.FC<{satirlar: {ad: string; an: number}[]}> = ({satirlar}) => (
-  <div style={{width: 880, border: `2px solid ${C.cizgi}`, borderRadius: 14, background: "#0D131BCC", padding: "22px 34px"}}>
+  <div style={{width: 880, border: `2px solid ${C.cizgi}`, borderRadius: 14, background: C.panel, padding: "22px 34px", boxShadow: "0 20px 40px rgba(40,30,10,0.10)"}}>
     {satirlar.map((s, i) => {
       return (
         <div key={i} style={{display: "flex", justifyContent: "space-between", alignItems: "center", padding: "16px 0", borderBottom: i < satirlar.length - 1 ? `1px solid ${C.cizgi}` : "none"}}>
@@ -118,7 +118,7 @@ const Anahtar: React.FC<{an: number}> = ({an}) => {
   const s = spring({frame: f - an, fps, config: {damping: 14, stiffness: 200}});
   return (
     <div style={{width: 150, height: 80, borderRadius: 40, background: s > 0.5 ? C.altin : C.cizgi, position: "relative", boxShadow: s > 0.5 ? `0 0 30px ${C.altin}88` : "none"}}>
-      <div style={{position: "absolute", top: 8, left: 8 + s * 70, width: 64, height: 64, borderRadius: 32, background: C.yazi}} />
+      <div style={{position: "absolute", top: 8, left: 8 + s * 70, width: 64, height: 64, borderRadius: 32, background: "#fff", boxShadow: "0 2px 6px rgba(0,0,0,0.25)"}} />
     </div>
   );
 };
@@ -127,7 +127,7 @@ const Telefon: React.FC<{o: number}> = ({o}) => {
   const {fps} = useVideoConfig();
   const s = spring({frame: f, fps, config: {damping: 18, stiffness: 90}});
   return (
-    <div style={{width: 620, height: 640, borderRadius: 60, border: `3px solid ${C.cizgi}`, background: "linear-gradient(180deg, #121A24, #0C1118)", padding: 40, boxShadow: "0 50px 100px rgba(0,0,0,0.6)", transform: `translateY(${(1 - s) * 300}px) rotate(${(1 - s) * -6}deg)`}}>
+    <div style={{width: 620, height: 640, borderRadius: 60, border: `3px solid ${C.cizgi}`, background: C.panel, padding: 40, boxShadow: "0 40px 80px rgba(40,30,10,0.22)", transform: `translateY(${(1 - s) * 300}px) rotate(${(1 - s) * -6}deg)`}}>
       <div style={{width: 120, height: 10, borderRadius: 5, background: C.cizgi, margin: "0 auto 36px"}} />
       <div style={{fontFamily: MONO, fontWeight: 700, fontSize: 32, color: C.soluk, letterSpacing: 4}}>e-DEVLET · GÜVENLİK</div>
       <div style={{height: 1, background: C.cizgi, margin: "24px 0"}} />
@@ -177,7 +177,7 @@ export const S5: React.FC<{o: number}> = ({o}) => (
     <Pos x={100} y={160}><Ust an={0}>ÜCRETSİZ REHBER</Ust></Pos>
     <Pos x={100} y={230}><Satir an={0} boyut={92}>Yorumlara yaz:</Satir></Pos>
     <Pos x={100} y={380}>
-      <div style={{width: 880, border: `4px solid ${C.kirmizi}`, borderRadius: 18, padding: "26px 40px", fontFamily: MONO, fontWeight: 700, fontSize: 120, color: C.yazi, letterSpacing: 8, background: "#160B0D", boxShadow: `0 0 60px ${C.kirmizi}44`}}>
+      <div style={{width: 880, border: `4px solid ${C.kirmizi}`, borderRadius: 18, padding: "26px 40px", fontFamily: MONO, fontWeight: 700, fontSize: 120, color: C.yazi, letterSpacing: 8, background: C.panel, boxShadow: `0 20px 50px ${C.kirmizi}33`}}>
         <Yaz an={t("KORUMA") - o} metin="KORUMA" />
       </div>
     </Pos>

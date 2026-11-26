@@ -6,7 +6,7 @@ import {DARBELER, S1, S2, S3, S4, S5, SINIR, VID002C_SURE, t} from "./VID002C";
 
 export const VID002P_SURE = VID002C_SURE;
 export const VID002P: React.FC = () => (
-  <PVideo sahneler={[S1, S2, S3, S4, S5]} sinir={SINIR} bolumler={["SIZINTI", "RİSK", "HACİZ", "ÇÖZÜM", "REHBER"]} darbeler={DARBELER} kelimeler={kelimeler as Kelime[]} ses="VID_002/ses.mp3" vurgu={["KORUMA"]} maskot={1}>
+  <PVideo sahneler={[S1, S2, S3, S4, S5]} sinir={SINIR} bolumler={["SIZINTI", "RİSK", "HACİZ", "ÇÖZÜM", "REHBER"]} darbeler={DARBELER} kelimeler={kelimeler as Kelime[]} ses="VID_002/ses.mp3" vurgu={["KORUMA"]}>
     <CSfx ad="glitch" an={t("sızdıysa") + 2} ses={0.12} />
     <CSfx ad="kagit" an={2} ses={0.25} />
     {[0, 6, 12].map((d) => <CSfx key={`k${d}`} ad="daktilo" an={t("şirket", 0) + d} ses={0.2} />)}
